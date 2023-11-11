@@ -23,11 +23,7 @@ describe ('Appointment Workflow', function () {
         await AppointmentPage.makeAppointment();
         const facility = await AppointmentPage.bookedFacility();
         expect(facility).toHaveText('Tokyo CURA Healthcare Center');
-        // await AppointmentPage.assertfacilityDropdown();
-        // await AppointmentPage.asserthospitalReadmission('yes');
-        // await AppointmentPage.asserthealthCareProgram('None');
-        // await AppointmentPage.assertvisitDate('12/11/2023');
-        // await AppointmentPage.assertinsertComment('Malaria')
+        
          
 
 
