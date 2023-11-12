@@ -93,37 +93,35 @@
         await this.bookAppointment.click();
     }
 
-    async bookedTokyoFacility() {
-        await this.facilitySelected.getText();
+    async assertbookedTokyoFacility() {
+        await expect (this.facilitySelected).toHaveText('Tokyo CURA Healthcare Center');
     }
 
 
-    async bookedDate() {
-        await this.dateSelected.getText();
+    async assertbookedDate() {
+        await expect (this.dateSelected).toHaveText('12/11/2023');
     }
 
-    async comment () {
-        await this.commentWritten.getText();
+    async assertcomment () {
+        await expect (this.commentWritten).toHaveText('Malaria');
     }
 
-     async readmissionSelected() {
-        await this.pickedReadmission.getText();
+     async assertreadmissionSelected() {
+        await expect (this.pickedReadmission).toHaveText('Yes');
     }
 
-    async selectedProgram() {
-        await this.pickedProgram.getText();
+    async assertselectedProgram() {
+        await expect (this.pickedProgram).toHaveText('None');
     }
 
-      async bookedHongKongFacility() {
-        await this.facilitySelected.getText();
-    }
-
-   
-
-
-    //   async bookedTokyoFacility() {
-    //     await this.facilitySelected.getText();
+    //   async selectHongKong() {
+    //     await this.facilityDropdown.selectByVisibleText(selectedfacility);
     // }
+
+    // async chooseVisitDate() {
+    //     await this.visitDate.setValue(date);
+    // }
+
 
 
 
